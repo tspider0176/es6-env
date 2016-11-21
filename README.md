@@ -1,4 +1,4 @@
-# Hello vis.js
+# vis.js on ES6
 
 ## env(ES6)
 webpack + babel + eslint

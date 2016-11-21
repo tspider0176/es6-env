@@ -1,4 +1,4 @@
-import * as vis from "vis"
+import vis from "vis"
 
 const container = document.getElementById("visualization");
 const data = [
