@@ -1,13 +1,56 @@
-import vis from "vis"
+import Highcharts from "highcharts"
 
-const container = document.getElementById("visualization");
-const data = [
-  {id: 1, content: "item 1", start: "2013-04-20"},
-  {id: 2, content: "item 2", start: "2013-04-14"},
-  {id: 3, content: "item 3", start: "2013-04-18"},
-  {id: 4, content: "item 4", start: "2013-04-16", end: "2013-04-19"},
-  {id: 5, content: "item 5", start: "2013-04-25"},
-  {id: 6, content: "item 6", start: "2013-04-27"}
-];
+const chartProperty = {
+  plotBackgroundColor: null,
+  plotBorderWidth: 0,
+  plotShadow: false
+};
 
-new vis.Timeline(container, data, {});
+const chartTitle = {
+  text: "Browser<br>shares<br>2015",
+  align: "center",
+  verticalAlign: "middle",
+  y: 40
+}
+
+Highcharts.chart("container", {
+  chart: chartProperty,
+  title: chartTitle,
+  tooltip: {
+    pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>"
+  },
+  plotOptions: {
+    pie: {
+        dataLabels: {
+            enabled: true,
+            distance: -50,
+            style: {
+                fontWeight: "bold",
+                color: "white"
+            }
+        },
+        startAngle: -90,
+        endAngle: 90,
+        center: ["50%", "75%"]
+    }
+  },
+  series: [{
+    type: "pie",
+    name: "Browser share",
+    innerSize: "50%",
+    data: [
+        ["Firefox", 10.38],
+        ["IE", 56.33],
+        ["Chrome", 24.03],
+        ["Safari", 4.77],
+        ["Opera", 0.91],
+        {
+            name: "Proprietary or Undetectable",
+            y: 0.2,
+            dataLabels: {
+                enabled: false
+            }
+        }
+    ]
+  }]
+});
