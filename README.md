@@ -19,3 +19,9 @@ $ eslint ./src/es2015/
 $ `npm bin`/webpack
 $ open ./distribution/index.html
 ```
+
+## server
+
+```
+webpack-dev-server
+```

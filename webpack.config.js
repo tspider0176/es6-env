@@ -10,7 +10,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.css$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel",
         query:{

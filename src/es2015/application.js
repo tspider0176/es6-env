@@ -9,5 +9,5 @@ const data = [
   {id: 5, content: "item 5", start: "2013-04-25"},
   {id: 6, content: "item 6", start: "2013-04-27"}
 ];
-const options = {};
-new vis.Timeline(container, data, options);
+
+new vis.Timeline(container, data, {});
