@@ -1,4 +1,4 @@
-# vis.js on ES6
+# ES6 dev env
 
 ## env(ES6)
 webpack + babel + eslint
@@ -13,7 +13,7 @@ npm install
 $ eslint ./src/es2015/
 ```
 
-## compile(ES6 -> ES5)
+## compile (ES6 -> ES5)
 
 ```
 $ `npm bin`/webpack
@@ -23,5 +23,5 @@ $ open ./distribution/index.html
 ## server
 
 ```
-npm start
+yarn start
 ```
