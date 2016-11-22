@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 module.exports = {
   context: __dirname + '/src',
   entry: {
@@ -29,5 +31,8 @@ module.exports = {
         loaders: ['style', 'css?modules'],
       },
     ]
-  }
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+  ],
 };
