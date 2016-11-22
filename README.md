@@ -23,5 +23,5 @@ $ open ./distribution/index.html
 ## server
 
 ```
-webpack-dev-server
+npm start
 ```
