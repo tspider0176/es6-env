@@ -8,6 +8,12 @@ webpack + babel + eslint
 npm install
 ```
 
+or more faster:
+
+```
+yarn
+```
+
 ## eslint
 ```
 $ eslint ./src/es2015/
