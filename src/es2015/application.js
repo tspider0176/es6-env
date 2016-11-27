@@ -1,5 +1,7 @@
 import Highcharts from "highcharts"
 
+import "../style/main.css"
+
 Highcharts.chart('container', {
         title: {
             text: 'Monthly Average Temperature',

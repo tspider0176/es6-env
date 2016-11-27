@@ -3,7 +3,7 @@ var webpack = require('webpack');
 module.exports = {
   context: __dirname + '/src',
   entry: {
-    'application': './es2015/application',
+    'application': './es2015/application'
   },
   output: {
     path: __dirname + '/distribution/',
@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css?modules'],
+        loader: 'style!css'
       },
     ]
   },
