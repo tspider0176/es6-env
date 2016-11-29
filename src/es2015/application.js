@@ -1,4 +1,5 @@
 import Highcharts from "highcharts"
+import * as Immutable from "immutable";
 
 import "../style/main.css"
 
