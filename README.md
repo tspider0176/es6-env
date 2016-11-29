@@ -31,3 +31,12 @@ $ open ./distribution/index.html
 ```
 yarn start
 ```
+
+## add dependencies
+```
+npm install --save-dev [package]
+```
+or
+```
+yarn add [package]
+```
